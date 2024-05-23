@@ -4,13 +4,9 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 import java.util.Optional;
+import org.springframework.data.repository.CrudRepository;
 
-public interface MedicoRepository {
-    void insertar(Medico medico);
-    Medico getMedicoById(Long id);
-    void eliminar(Long id);
-    void actualizar(Medico medico);
-    List<Medico> getAllMedicos();
+public interface MedicoRepository extends CrudRepository<Medico, Long>{
 
     public Optional<Medico> findByEmail(String email);
 }
