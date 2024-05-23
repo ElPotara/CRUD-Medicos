@@ -1,7 +1,8 @@
-package com.fcfm.pia.sevices;
+package com.fcfm.pia.sevices.impl;
 
 import com.fcfm.pia.models.Medico;
 import com.fcfm.pia.repository.MedicoRepository;
+import com.fcfm.pia.sevices.MedicoService;
 import com.fcfm.pia.utils.MedicoMapper;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class MedicoServiceImpl implements MedicoService{
+public class MedicoServiceImpl implements MedicoService {
     List<Medico> medicoList = new ArrayList<>();
     private MedicoRepository medicoRepository;
     @Autowired

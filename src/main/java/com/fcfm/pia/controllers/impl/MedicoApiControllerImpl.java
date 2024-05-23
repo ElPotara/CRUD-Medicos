@@ -1,4 +1,4 @@
-package com.fcfm.pia.controllers;
+package com.fcfm.pia.controllers.impl;
 
 import com.fcfm.pia.controllers.MedicoApiController;
 import com.fcfm.pia.models.Medico;
